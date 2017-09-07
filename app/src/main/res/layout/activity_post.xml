@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sleepyowl.fireapp.PostActivity">
+
+    <ImageButton
+        android:id="@+id/imageSelect"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="9dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/white"
+        android:scaleType="centerCrop"
+        app:srcCompat="@mipmap/add_btn"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <EditText
+        android:id="@+id/titleField"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:background="@drawable/input_outline"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="220dp"
+        android:layout_above="@+id/deskField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp" />
+
+    <EditText
+        android:id="@+id/deskField"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:background="@drawable/input_outline"
+        android:ems="10"
+        android:hint="Write Description...."
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="350dp"
+        android:layout_above="@+id/submitBtn"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="50dp" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="15dp"
+        android:text="Submit Post"
+        android:textColor="@android:color/white"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="480dp"
+        tools:layout_editor_absoluteX="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/titleField"
+        android:layout_alignStart="@+id/titleField" />
+</RelativeLayout>
